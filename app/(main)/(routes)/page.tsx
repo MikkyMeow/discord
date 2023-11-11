@@ -1,3 +1,10 @@
+"use client";
+import { UserButton } from "@clerk/clerk-react";
+
 export default function Home() {
-  return <div>This is a protected route</div>;
+  return (
+    <div>
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 }
